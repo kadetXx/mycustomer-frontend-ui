@@ -1,0 +1,250 @@
+/* Importing Fonts */
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('../fonts/gilroy-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../fonts/gilroy-medium.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+/* Basic Styling */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "gilroybold";
+}
+
+p{
+    font-family: "gilroy-medium";
+    font-size: 1.25rem;
+}
+
+
+.about-background-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12.5rem;
+}
+
+.about-background-left img{
+    width: 80%;
+}
+
+.about-background-right{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.about-background-right img{
+    width: 100%;
+
+}
+
+/* About Heading Styling */
+
+#about-header{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.about-content{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.about-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about-heading h1{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* About-Main-Profile  */
+#about-profile{
+    display: flex;
+    margin: 1rem;
+}
+
+.about-profile-image,
+.about-profile-content{
+    width: 49.5%;
+    height: 70%;
+}
+
+.about-profile-image{
+    text-align: center;
+}
+
+.about-profile-content{
+    padding: 2.5rem 0;
+}
+
+.about-profile-image img{
+    width: 75%;
+    filter: brightness(70%);
+    border-radius: 6px;
+}
+
+.about-profile-content p{
+    line-height: 2rem;
+    align-items: center;
+}
+
+.about-profile-content-heading{
+    font-size: 2.25rem;
+    margin: 1rem 0;
+}
+
+
+/* About Mission Styling */
+#about-mission{
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-mission-heading{
+    font-size: 2.25rem;
+}
+
+
+/* About Collage */
+
+#about-collage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1.5rem;
+    grid-gap: 0 15px;
+    padding: 7%;
+}
+
+.about-collage-images img{
+    width: 100%;
+    margin-bottom: .75rem;
+}
+
+
+/* Collage Images Position & Styling */
+#collage_1{
+    padding: 2.5rem 0 0 2.5rem;
+}
+
+#collage_5{
+    margin: 2.5rem 0;
+}
+
+#collage_6{
+    padding: 0 2.5rem 2.5rem 0;
+}
+
+
+
+/* Footer Styling Begins */
+
+#footer-background img{
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for 767px and below */
+
+@media only screen and (max-width:767px){
+   #about-profile{
+       flex-direction: column;
+       
+   }
+   #about-profile div{
+       width: 100%;
+   }
+   
+   #about-mission{
+       padding: 1rem;
+       margin: 1rem;
+   }
+
+   .about-heading{
+       margin-bottom: 0;
+   }
+
+   .about-heading h1{
+       padding: .5rem;
+       margin-bottom: 1rem;
+   }
+
+   .about-profile-content{
+       padding: 1rem;
+   }
+}
+
+/* Media Query for 768px and above */
+
+@media only screen and (min-width:767px){
+    h2{
+        font-size: 3rem;
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    h2{
+        font-size: 3.5rem;
+    }
+    
+    #about-mission{
+        padding: 3rem;
+        margin: 2rem;
+    }
+}
