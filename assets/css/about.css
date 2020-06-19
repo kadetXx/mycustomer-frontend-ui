@@ -168,6 +168,7 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1.5rem;
     grid-gap: 0 15px;
+    padding: 7%;
 }
 
 .about-collage-images img{

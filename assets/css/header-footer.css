@@ -131,6 +131,13 @@ nav {
 
 .nav__button:hover {
   color: var(--tetiary);
+  border: 1px solid var(--tetiary);
+  background-color: var(--tetiary);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.7rem 2.5rem;
+  font-family: 'gilroylight';
+  font-size: 14px;
 }
 
 .btn-nav-active {
@@ -226,6 +233,11 @@ footer {
 .footer__menu__list__link {
   color: #fff;
   line-height: 167.8%;
+}
+
+.footer__menu__list__link:hover {
+  text-decoration: none;
+  color: var(--tetiary);
 }
 
 @media (max-width: 992px) {
