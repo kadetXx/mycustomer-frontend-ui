@@ -1566,3 +1566,7 @@ footer .row {
   text-decoration: none;
   color: #FF8C5F !important;
 }
+
+.menubar {
+  background-color: #fff !important;
+}
