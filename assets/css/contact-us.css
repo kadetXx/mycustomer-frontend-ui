@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none !important;
+}
 
 /* Fonts */
 
@@ -43,6 +46,9 @@
 }
 
 /* Form Styles */
+form{
+    padding: 10px;
+}
 .form-head{
     font-family: 'Gilroy-Bold';
     font-style: normal;
@@ -94,6 +100,9 @@ option{
     padding: 15px;
     letter-spacing: -0.02em;
 }
+.button > a{
+    color: #ffffff;
+}
 textarea{
     width: 100%;
     padding: 12px 20px;
@@ -144,6 +153,12 @@ textarea{
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
+    color: #000000;
+}
+#st-1{
+    margin-bottom: 35px;
+}
+.subhead-text > a{
     color: #000000;
 }
 .map-area{
