@@ -7,9 +7,9 @@ This repo will be used for testing the frontend implementation of mycustomer web
 I used a task 'create transaction page as an example here'
 
 - Fork this repo
-- Clone the repo to your desktop ```git clone https://github.com/hngi/sentry-my-customer-frontend.git```
+- Clone the repo to your desktop ```git clone https://github.com/kadetXx/mycustomer-frontend-ui.git```
 - Open a code editor on your cloned repo
-- Set upstream by running: ```git remote add upstream https://github.com/hngi/sentry-my-customer-frontend.git```
+- Set upstream by running: ```git remote add upstream https://github.com/kadetXx/mycustomer-frontend-ui.git```
 - Update any recent changes by runnning: ```git pull upstream develop```
 - Then create a new branch with the name of what you want to do, eg run: ```git checkout -b create-transactions-page```
 - Create your files according to correct file structure and write your codes
