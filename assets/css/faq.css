@@ -1,0 +1,104 @@
+/* please delete this when you want to merge, i didn't the specified font */
+body{
+    font-family: 'Montserrat';
+}
+
+/* Top section */
+.faq-top {
+    background: #F3F3F3;
+    height: 446px;
+}
+
+.faq-top__content {
+    padding-top: 144px;
+}
+
+.faq-top__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 64px;
+    color: #00098A;
+    margin-bottom: 30px;
+}
+
+#search-faq {
+    max-width: 671px;
+    width: 100%;
+    padding: 16px 0px 16px 34px;
+    margin: 0 auto 45px;
+    height: auto;
+    font-size: 14px;
+    border: none;
+}
+
+.faq-top__btn {
+    border: 1px solid #FF8C5F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #FF8C5F;
+    padding: 12px 60px;
+}
+
+/* background vectors styles */
+.faq-top__blue-cutout {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    height: 200px;
+}
+
+.faq-top__orange-triangle-cutout {
+    position: absolute;
+    right: 0px;
+    top: 219px;
+    height: 200px;
+}
+
+.faq-top__orange-cutout {
+    position: absolute;
+    left: 0px;
+    top: 124px;
+    height: 100px;
+    width: 80px;
+}
+
+.faq-top__yellow-cutout {
+    position: absolute;
+    left: 0px;
+    top: 223px;
+    height: 100px;
+    width: 80px;
+}
+
+/* Accordion styles */
+.faq {
+    margin: 60px auto;
+}
+.faq__btn {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
+    padding: 24px 24px 0;
+}
+.faq__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #00098A;
+}
+.faq__content {
+    padding: 20px;
+}
+
+.faq__btn:hover, .faq__btn:focus {
+    outline: none;
+}
+/* arrows positioning */
+.fa-angle-up, .fa-angle-down {
+    position: relative;
+    bottom: 30px;
+    float: right;
+    font-size: 24px;
+}
