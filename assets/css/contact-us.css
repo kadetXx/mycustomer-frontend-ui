@@ -216,13 +216,17 @@ input:focus, ::placeholder:focus {
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
-    color: #000000;
+    color: #FF8C5F;
 }
 #st-1{
     margin-bottom: 35px;
 }
 .subhead-text > a{
-    color: #000000;
+    color: #FF8C5F;
+}
+
+.subhead-address {
+  color: rgb(68, 66, 66);
 }
 .map-area{
     max-width: 306px;
