@@ -273,6 +273,10 @@ h1,h2,h3,h4,h5,h6 {
     transform: scale(0.9);
   }
 
+  .call-to-download__button a {
+    margin-left: 0;
+  }
+
   .call-to-download-floating-circle, .call-to-download-floating-triangles {
     transform: scale(0.6);
   }
