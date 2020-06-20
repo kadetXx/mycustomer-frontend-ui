@@ -6,18 +6,16 @@ body{
 /* Top section */
 .faq-top {
     background: #F3F3F3;
-    height: 446px;
+    height: auto;
 }
 
 .faq-top__content {
-    padding-top: 144px;
+    padding: 100px 0;
 }
 /* faq top title */
 .faq-top__title {
-    font-style: normal;
     font-weight: bold;
-    font-size: 52px;
-    line-height: 64px;
+    font-size: 44px;
     color: #00098A;
     margin-bottom: 30px;
 }
@@ -141,9 +139,8 @@ body{
 }
 
 .faq__title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: normal;
+    font-size:22px;
     color: #00098A;
 }
 
