@@ -217,7 +217,7 @@ img {
 .bg-overlay::before {
   position: absolute;
   content: "";
-  background-color: #2f5bea;
+  background-color: var(--primary);
   top: 0;
   left: 0;
   width: 100%;
@@ -234,7 +234,7 @@ img {
 .bg-overlay-2::before {
   position: absolute;
   content: "";
-  background-color: #2f5bea;
+  background-color: var(--primary);
   top: 0;
   left: 0;
   width: 100%;
@@ -251,7 +251,7 @@ img {
 .bg-overlay-3::before {
   position: absolute;
   content: "";
-  background-color: #2f5bea;
+  background-color: var(--primary);
   top: 0;
   left: 0;
   width: 100%;
@@ -364,7 +364,7 @@ img {
 }
 
 .underline-hover {
-  color: #2f5bea;
+  color: var(--primary);
   font-weight: 400;
   font-size: 16px;
   -webkit-transition: 0.3s;
@@ -374,7 +374,7 @@ img {
 
 .underline-hover:hover {
   text-decoration: underline;
-  color: #2f5bea;
+  color: var(--primary);
 }
 
 .section-heading {
@@ -388,7 +388,7 @@ img {
 
 .section-heading h6 {
   font-size: 16px;
-  color: #2f5bea;
+  color: var(--primary);
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -443,7 +443,7 @@ img {
   border-radius: 0px;
   z-index: 999;
   margin-bottom: 0px;
-  background-color: #2f5bea;
+  background-color: var(--primary);
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -489,7 +489,7 @@ img {
 .stickyadd.custom_nav_menu {
   margin-top: 0px;
   padding: 8px 0px;
-  background-color: #2f5bea;
+  background-color: var(--primary);
   -webkit-box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   border-bottom: none;
@@ -581,12 +581,12 @@ img {
 }
 
 .navbar.navbar-expand-lg.fixed-top.custom_nav_menu.home-5.sticky.stickyadd {
-  background-color: #2f5bea;
+  background-color: var(--primary);
   border-bottom: none;
 }
 
 .navbar.navbar-expand-lg.fixed-top.custom_nav_menu.home-2.sticky.stickyadd {
-  background-color: #2f5bea;
+  background-color: var(--primary);
   border-bottom: none;
 }
 
@@ -617,7 +617,7 @@ img {
 }
 
 .btn.header-btn.two {
-  background-color: #2f5bea;
+  background-color: var(--primary);
   color: #fff;
 }
 
@@ -1069,7 +1069,7 @@ img {
   left: 0;
   height: 5px;
   width: 0;
-  background-color: #2f5bea;
+  background-color: var(--secondary);
 }
 
 .single-feature-area:hover::after {
@@ -1114,7 +1114,7 @@ img {
 
 .call-to-action-area {
   padding: 70px 40px;
-  background-color: #2f5bea;
+  background-color: var(--primary);
   position: relative;
   border-radius: 5px;
   -webkit-box-shadow: 0 8px 60px 0 rgba(103, 151, 255, 0.3),
@@ -1237,7 +1237,7 @@ img {
 }
 
 .price-table-heading h6 {
-  color: #2f5bea;
+  color: var(--primary);
   font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1265,7 +1265,7 @@ img {
 
 .price-table-body ul li i {
   margin-right: 5px;
-  color: #2f5bea;
+  color: var(--primary);
 }
 
 .price-table-body ul li span {
@@ -1290,7 +1290,7 @@ img {
 /* ----- Footer Contact CSS ----- */
 
 .footer-contact-area {
-  background-color: #2f5bea;
+  background-color: var(--primary);
 }
 
 .footer-logo a img {
@@ -1336,7 +1336,7 @@ img {
 }
 
 .copy-right-area {
-  background-color: #2f5bea;
+  background-color: var(--primary);
   padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -1394,7 +1394,7 @@ img {
 
 .card-header {
   padding: 0.75rem 1.25rem;
-  background-color: #2f5bea;
+  background-color: var(--primary);
   border-bottom: none;
 }
 
@@ -1424,7 +1424,7 @@ img {
 }
 
 .slick-arrow {
-  background-color: #2f5bea;
+  background-color: var(--primary);
   border: none;
   color: #fff;
   font-size: 14px;

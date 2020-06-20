@@ -183,6 +183,10 @@ h1,h2,h3,h4,h5,h6 {
   background-color: var(--tetiary);
 }
 
+/* #about > div > div > div.col-md-5 > div > div.video-thumb > img {
+  max-width: 50%;
+} */
+
 /* CALL TO ACTION STYLING */ 
 
 .cta-container {
@@ -247,6 +251,14 @@ h1,h2,h3,h4,h5,h6 {
   left: -120px;
 }
 
+.app-screen-shot-area {
+  background-color: var(--secondary);
+}
+
+.app-screen-shot-area .slick-arrow {
+  display: none !important;
+}
+
 @media (max-width: 767px) {
   .call-to-download__button {
     padding: 0 2px;
@@ -275,3 +287,29 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 0;
   }
 }
+
+/* CAROUSEL */
+
+#client > div > div:nth-child(2) > div > div > div.owl-stage-outer > div > div.owl-item.active > div {
+  justify-content: center;
+  text-align: center;
+}
+
+.client-feedback-area .owl-nav {
+  position: static !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 4%;
+}
+
+.testimonial-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.testimonial-img {
+  width: 100px !important;
+  border-radius: 50%;
+}
+
