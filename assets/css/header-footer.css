@@ -62,8 +62,9 @@ nav {
 .nav__brand {
   width: 20%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 15px;
 }
 
 .nav__brand__logo {
@@ -120,13 +121,14 @@ nav {
 .nav__button__container {
   width: 30%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .nav__button {
   background-color: transparent;
   border: none;
+  margin-left: 10%;
 }
 
 .nav__button:hover {
@@ -169,13 +171,14 @@ nav {
 /* FOOTER CSS */
 
 footer {
-  height: 361px;
+  height: auto;
   background-color: var(--primary-dark);
+  padding: 15% 0;
 }
 
 .footer_left {
   height: 100%;
-  padding: 10%;
+  /* padding: 10% 0 ; */
 }
 
 .footer__brand__container {
@@ -185,27 +188,30 @@ footer {
   justify-content: center;
   align-items: flex-start;
   color: #fff;
+  /* padding-left: 15px; */
 }
 
 .footer__brand {
   font-family: 'gilroybold';
-  font-size: 28px
+  font-size: 28px;
+  color: var(--tetiary);
 }
 
 .footer__brand__tagline {
-  color: #fff;
+  color: lightgrey;
   font-family: 'gilroylight';
 }
 
 .footer_right {
   height: 100%;
-  padding: 10% 7%;
+  /* padding: 10% 0;
+  align-items: stretch; */
 }
 
 .footer__menu {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding: 0;
 }
 
@@ -216,22 +222,22 @@ footer {
 
 .footer__menu__list {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 10px 15px 10px 0;
 }
 
 .footer__menu__list__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .footer__menu__list__link {
-  color: #fff;
+  color: lightgray;
   line-height: 167.8%;
 }
 
@@ -351,11 +357,11 @@ footer {
   }
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .footer__menu__list__item {
     margin-right: 2rem;
   }
-}
+} */
 
 @media (max-width: 994px) {
 
@@ -366,6 +372,7 @@ footer {
   .footer__brand__container {
     justify-content: center;
     align-items: center;
+    margin-bottom: 70px;
   }
 
   .footer__menu {
@@ -391,3 +398,14 @@ footer {
   }
 }
 
+@media (max-width: 575px) {
+
+  .nav__brand {
+    padding-left: 0;
+  }
+
+  .nav {
+    padding-right: 0;
+  }
+
+}

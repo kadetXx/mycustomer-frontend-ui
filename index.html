@@ -21,106 +21,60 @@
 <body>
 
     <!-- Header start -->
-    <!-- <nav class="navbar navbar-expand-lg fixed-top custom_nav_menu">
-        <div class="container">
-           
-            <a class="navbar-brand logo" href="#">
-                <img src="assets/img/logo.png" alt="" class="img-fluid logo-light">
-                <img src="assets/img/logo.png" alt="" class="img-fluid logo-dark">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <i class='ti-menu'></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Client</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Login</a>
-                    </li>
-                </ul>
-                <div class="d-lg-flex d-none">
-                    <ul class="nav align-self-center">
-                        <li class="nav-item pl-4">
-                            <a class="btn header-btn" href="#">
-                                SignUp
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <header>
+      <nav>
+        <div class="container nav">
+          <div class="nav__brand">
+            <a href="#" class="nav__brand__logo">MyCustomer</a>
+          </div>
+          <div class="nav__menu">
+            <div class="menu__container">
+              <ul class="menu__list">
+                <li class="menu__list__item"><a href="index.html" class="menu__list__link">Home</a></li>
+                <li class="menu__list__item"><a href="about.html" class="menu__list__link">About</a></li>
+                <li class="menu__list__item"><a href="faq.html" class="menu__list__link">FAQ</a></li>
+                <li class="menu__list__item"><a href="contact-us.html" class="menu__list__link">Contact Us</a></li>
+              </ul>
             </div>
+          </div>
+          <div class="nav__button__container">
+            <button class="nav__button ">Log In</button>
+            <button class="nav__button btn-nav-active">Sign Up</button>
+          </div>
+          <div class="hamburger-container">
+            <div class="hamburger__menu">
+              <div class="menubar menu-bar-one"></div>
+              <div class="menubar menu-bar-two"></div>
+              <div class="menubar menu-bar-three"></div>
+            </div>
+          </div>
         </div>
-    </nav> -->
-    <!-- Header end -->
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="close-mobile-menu">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="mobile__nav__menu">
+            <div class="mobile__menu__container">
+              <ul class="mobile__menu__list">
+                <li class="mobile__menu__list__item"><a href="index.html" class="mobile__menu__list__link">Home</a>
+                </li>
+                <li class="mobile__menu__list__item"><a href="about.html" class="mobile__menu__list__link">About</a>
+                </li>
+                <li class="mobile__menu__list__item"><a href="faq.html" class="mobile__menu__list__link">FAQ</a></li>
+                <li class="mobile__menu__list__item"><a href="contact-us.html"
+                    class="mobile__menu__list__link">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="mobile__nav__button__container">
+              <button class="mobile__nav__button">Log In</button>
+              <button class="mobile__nav__button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <section id="header">
-      <!-- write header codes here, delete this comment when done -->
-      <header>
-        <nav>
-          <div class="container nav">
-            <div class="nav__brand">
-              <a href="#" class="nav__brand__logo">MyCustomer</a>
-            </div>
-            <div class="nav__menu">
-              <div class="menu__container">
-                <ul class="menu__list">
-                  <li class="menu__list__item"><a href="index.html" class="menu__list__link">Home</a></li>
-                  <li class="menu__list__item"><a href="about.html" class="menu__list__link">About</a></li>
-                  <li class="menu__list__item"><a href="#" class="menu__list__link">FAQ</a></li>
-                  <li class="menu__list__item"><a href="contact-us.html" class="menu__list__link">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav__button__container">
-              <button class="nav__button ">Log In</button>
-              <button class="nav__button btn-nav-active">Sign Up</button>
-            </div>
-            <div class="hamburger-container">
-              <div class="hamburger__menu">
-                <div class="menubar menu-bar-one"></div>
-                <div class="menubar menu-bar-two"></div>
-                <div class="menubar menu-bar-three"></div>
-              </div>
-            </div>
-          </div>
-          <div id="mobile-menu" class="mobile-menu">
-            <div class="close-mobile-menu">
-              <i class="fas fa-times"></i>
-            </div>
-            <div class="mobile__nav__menu">
-              <div class="mobile__menu__container">
-                <ul class="mobile__menu__list">
-                  <li class="mobile__menu__list__item"><a href="index.html" class="mobile__menu__list__link">Home</a></li>
-                  <li class="mobile__menu__list__item"><a href="about.html" class="mobile__menu__list__link">About</a></li>
-                  <li class="mobile__menu__list__item"><a href="#" class="mobile__menu__list__link">FAQ</a></li>
-                  <li class="mobile__menu__list__item"><a href="contact-us.html" class="mobile__menu__list__link">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="mobile__nav__button__container">
-                <button class="mobile__nav__button">Log In</button>
-                <button class="mobile__nav__button">Sign Up</button>
-              </div>
-            </div>
-          </div>
-        </nav>
-  
-      </header>
-    </section>
+    </header>
+    <!-- header end -->
 
     <!-- Welcome-area-start -->
     <div class="welcome-area theme-bg" id="home">
@@ -491,8 +445,105 @@
     </div>
     <!-- Client Feedback Area -->
 
+    <!-- Footer start -->
+      <footer>
+        <div class="container footer__container">
+          <div class="row">
+            <div class="col-lg-6 footer_left">
+              <div class="footer__brand__container">
+                <p class="footer__brand">MyCustomer</p>
+                <a href="#" class="footer__brand__tagline">customerpay.me</a>
+              </div>
+            </div>
+            <div class="col-lg-6 footer_right">
+              <div class="footer__menu">
+                <div class="footer__menu__container">
+                  <ul class="footer__menu__list">
+                    <li class="footer__menu__list__item"><a href="index.html" class="footer__menu__list__link">Home</a></li>
+                    <li class="footer__menu__list__item"><a href="about.html" class="footer__menu__list__link">About</a></li>
+                    <li class="footer__menu__list__item"><a href="faq.html" class="footer__menu__list__link">FAQ</a></li>
+                    <li class="footer__menu__list__item"><a href="contact-us.html" class="footer__menu__list__link">Contact Us</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer end -->
 
-    <!-- Footer Contact Area -->
+    <!-- Core JS here - dont touch -->
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bundle.js"></script>
+
+    <!-- Custom js-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/header-footer.js"></script>
+
+
+</body>
+
+</html>
+
+
+<!-- Header start -->
+    <!-- <nav class="navbar navbar-expand-lg fixed-top custom_nav_menu">
+        <div class="container">
+           
+            <a class="navbar-brand logo" href="#">
+                <img src="assets/img/logo.png" alt="" class="img-fluid logo-light">
+                <img src="assets/img/logo.png" alt="" class="img-fluid logo-dark">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='ti-menu'></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Login</a>
+                    </li>
+                </ul>
+                <div class="d-lg-flex d-none">
+                    <ul class="nav align-self-center">
+                        <li class="nav-item pl-4">
+                            <a class="btn header-btn" href="#">
+                                SignUp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+    <!-- Header end -->
+
+     <!-- Footer Contact Area -->
     <!-- <div class="footer-contact-area section-padding-100-50">
         <div class="container">
             <div class="row justify-content-center">
@@ -584,52 +635,3 @@
             </div>
         </div>
     </div> -->
-
-    <section id="footer">
-      <footer>
-        <div class="footer__container">
-          <div class="row">
-            <div class="col-lg-6 footer_left">
-              <div class="footer__brand__container">
-                <p class="footer__brand">MyCustomer</p>
-                <a href="#" class="footer__brand__tagline">customerpay.me</a>
-              </div>
-            </div>
-            <div class="col-lg-6 footer_right">
-              <div class="footer__menu">
-                <div class="footer__menu__container">
-                  <ul class="footer__menu__list">
-                    <li class="footer__menu__list__item"><a href="index.html" class="footer__menu__list__link">Home</a></li>
-                    <li class="footer__menu__list__item"><a href="about.html" class="footer__menu__list__link">About</a></li>
-                    <li class="footer__menu__list__item"><a href="#" class="footer__menu__list__link">FAQ</a></li>
-                    <li class="footer__menu__list__item"><a href="contact-us.html" class="footer__menu__list__link">Contact Us</a></li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
-
-    <!-- Core JS here - dont touch -->
-    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/bundle.js"></script>
-
-    <!-- Custom js-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/header-footer.js"></script>
-
-
-</body>
-
-</html>
