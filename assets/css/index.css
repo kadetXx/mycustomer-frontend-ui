@@ -132,9 +132,132 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 32px;
 }
 
+@media (max-width: 991px) {
+  .feature__heading {
+    font-size: 1.8rem;
+  }
 
-/*  WHO WE ARE AREA */
+  .feature-heading-container {
+    padding: 10% 10% 7%;
+  }
+
+  .feature__text h3 {
+    font-size: 22px;
+    line-height: 124.8%;
+    padding: 10% 20%  2%;
+    text-align: center;
+  }
+
+}
+
+
+/* FEATURE AREA*/
+
+.feature-area {
+  background-color:#F3F3F3;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
 
 .why-we-are-area {
-  background-color:#F3F3F3;;
+  background-color: var(--primary-light);
+  padding-bottom: 100px;
+}
+
+.why-we-content-text {
+  color: #fff;
+}
+
+.why-we-content-text p {
+  color: #e4e0e0;
+  padding-right: 15%;
+}
+
+.why-we-content-text .feature__action__btn {
+  background-color: var(--tetiary);
+}
+
+/* CALL TO ACTION STYLING */ 
+
+.cta-container {
+  position: relative;
+}
+
+.call-to-download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 0;
+}
+
+.call-to-download__heading {
+  color: var(--primary);
+}
+
+.call-to-download__heading h2 {
+  text-align: center;
+}
+
+.call-to-download__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.call-to-download__button {
+  padding: 2%;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.call-to-download__button i {
+  color: var(--primary);
+  font-size: 20px;
+  width: 30%;
+}
+
+.call-to-download__button a {
+  justify-self: flex-start;
+  text-align: left;
+  color: var(--primary);
+  margin-left: 10px;
+  width: 70%;
+}
+
+.call-to-download-floating-circle {
+  position: absolute;
+  right: 10px;
+}
+
+.call-to-download-floating-triangles {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -120px;
+}
+
+@media (max-width: 767px) {
+  .call-to-download__button {
+    padding: 0 2px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    margin: 0.3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+  }
+
+  .call-to-download-floating-circle, .call-to-download-floating-triangles {
+    transform: scale(0.6);
+  }
+
+  .call-to-download-floating-triangles {
+    left: -55px;
+  }
 }
