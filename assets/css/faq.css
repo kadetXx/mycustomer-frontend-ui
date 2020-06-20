@@ -1,25 +1,62 @@
 /* please delete this when you want to merge, i didn't the specified font */
-body{
-    font-family: 'Montserrat';
+/* Importing Fonts */
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('../fonts/gilroy-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../fonts/gilroy-medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'gilroy-medium';
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Top section */
 .faq-top {
     background: #F3F3F3;
-    height: 446px;
+    padding-bottom: 30px;
+
 }
 
 .faq-top__content {
     padding-top: 144px;
+
+
 }
 
 .faq-top__title {
+    font-family: 'gilroybold';
     font-style: normal;
     font-weight: bold;
-    font-size: 52px;
+    font-size: 52px auto;
     line-height: 64px;
     color: #00098A;
     margin-bottom: 30px;
+    margin-left: 10px;
 }
 
 #search-faq {
@@ -71,10 +108,97 @@ body{
     width: 80px;
 }
 
+
+@media screen and (max-width:375px) {
+
+    .faq-top__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        color: #00098A;
+        margin-bottom: 70px;
+
+    }
+
+    .faq-top__blue-cutout {
+        position: absolute;
+        right: 0px;
+        top: 130px;
+        height: 70px;
+    }
+
+    .faq-top__orange-triangle-cutout {
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        height: 70px;
+    }
+
+    .faq-top__orange-cutout {
+        position: absolute;
+        left: 0px;
+        top: 140px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .faq-top__yellow-cutout {
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        height: 60px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .faq-top__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        color: #00098A;
+        margin-bottom: 70px;
+
+    }
+
+    .faq-top__blue-cutout {
+        position: absolute;
+        right: 0px;
+        top: 130px;
+        height: 70px;
+    }
+
+    .faq-top__orange-triangle-cutout {
+        position: absolute;
+        right: 0px;
+        top: 200px;
+        height: 70px;
+    }
+
+    .faq-top__orange-cutout {
+        position: absolute;
+        left: 0px;
+        top: 140px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .faq-top__yellow-cutout {
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        height: 60px;
+        width: 50px;
+    }
+}
+
 /* Accordion styles */
 .faq {
     margin: 60px auto;
 }
+
 .faq__btn {
     width: 100%;
     text-align: left;
@@ -82,23 +206,37 @@ body{
     background: none;
     padding: 24px 24px 0;
 }
+
 .faq__title {
+    font-family: 'gilroybold';
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     color: #00098A;
 }
+
 .faq__content {
     padding: 20px;
 }
 
-.faq__btn:hover, .faq__btn:focus {
+.faq__btn:hover,
+.faq__btn:focus {
     outline: none;
 }
+
 /* arrows positioning */
-.fa-angle-up, .fa-angle-down {
+.fa-angle-up,
+.fa-angle-down {
     position: relative;
     bottom: 30px;
     float: right;
     font-size: 24px;
+
+}
+
+/*card*/
+.card-header {
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 4px;
 }
