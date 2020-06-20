@@ -18,17 +18,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "gilroy-medium";
-    padding: 0px;
-    margin: 0px;
-}
-
 /* Top section */
 .faq-top {
     background: #f3f3f3;
@@ -108,7 +97,7 @@ body {
 .faq-bg__right {
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 24px;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-animation-name: bounce_effect;
@@ -180,13 +169,14 @@ body {
 .faq__title {
     font-family: "gilroysemibold";
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     color: #00098a;
     padding-left: 5px;
 }
 
 .faq__content {
-    padding: 20px;
+    font-family: "gilroy-medium";
+    padding: 16px;
 }
 
 /* rotate arrow */
@@ -198,9 +188,9 @@ body {
 /* arrow positioning */
 .fa-angle-up {
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
     float: right;
-    font-size: 15px;
+    font-size: 20px;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
 }
@@ -212,278 +202,98 @@ body {
     padding-left: 4px;
 }
 
-.card-body p {
-    font-family: "gilroy-medium";
-    font-size: 20px;
-}
-
-/*-------media query for medium devices-----*/
+/*-------media query for tablet devices-----*/
 @media screen and (max-width: 768px) {
-    .faq-top__title {
-        font-weight: normal;
-        font-size: 30px;
-        color: #00098a;
-        margin-bottom: 30px;
-        font-family: "gilroybold";
-        line-height: 50px;
-    }
-
     /* background vector containers with bounce animation */
     .faq-bg__left {
-        position: absolute;
-        left: 0px;
-        top: 250px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+        top: 310px;
     }
 
     .faq-bg__right {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+        top: 60px;
     }
 
     /* set height of background vectors */
     .faq-bg__blue-cutout,
     .faq-bg__orange-triangle-cutout {
-        display: block;
         height: 110px;
-    }
-
-    .faq-bg__orange-triangle-cutout,
-    .faq-bg__yellow-cutout {
-        margin-top: -1px;
     }
 
     .faq-bg__orange-cutout,
     .faq-bg__yellow-cutout {
-        display: block;
         height: 80px;
         width: 70px;
     }
 }
 
-/*-------media query for small devices-----*/
-@media screen and (max-width: 414px) {
+/*-------media query for medium devices-----*/
+@media screen and (max-width: 425px) {
     .faq-top__title {
-        font-weight: normal;
-        font-size: 20px;
-        color: #00098a;
-        margin-bottom: 30px;
-        font-family: "gilroybold";
+        font-size: 26px;
         line-height: 30px;
     }
-
-    /* background vector containers with bounce animation */
-    .faq-bg__left {
-        position: absolute;
-        left: 0px;
-        top: 260px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+    #search-faq {
+        padding: 12px 0px 12px 24px;
+        margin: 0 auto 34px;
     }
-
-    .faq-bg__right {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+    .faq-top__btn {
+        padding: 10px 40px;
     }
-
+    .faq__title {
+        font-size: 18px;
+    }
+    .faq__content {
+        font-size: 14px;
+    }
     /* set height of background vectors */
     .faq-bg__blue-cutout,
     .faq-bg__orange-triangle-cutout {
-        display: block;
         height: 60px;
-    }
-
-    .faq-bg__orange-triangle-cutout,
-    .faq-bg__yellow-cutout {
-        margin-top: -1px;
     }
 
     .faq-bg__orange-cutout,
     .faq-bg__yellow-cutout {
-        display: block;
         height: 60px;
         width: 50px;
     }
 
-    .card-body p {
-        font-family: "gilroy-medium";
-        font-size: 10px;
+    .fa-angle-up {
+        font-size: 18px;
     }
 }
 
 /*-------media query for small devices-----*/
 @media screen and (max-width: 375px) {
     .faq-top__title {
-        font-weight: normal;
-        font-size: 25px;
-        color: #00098a;
-        margin-bottom: 30px;
-        font-family: "gilroybold";
-        line-height: 30px;
+        font-size: 24px;
     }
-
-    /* background vector containers with bounce animation */
-    .faq-bg__left {
-        position: absolute;
-        left: 0px;
-        top: 275px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+    .fa-angle-up {
+        font-size: 15px;
     }
-
-    .faq-bg__right {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
+    .faq__title {
+        font-size: 16px;
     }
-
-    /* set height of background vectors */
-    .faq-bg__blue-cutout,
-    .faq-bg__orange-triangle-cutout {
-        display: block;
-        height: 50px;
-    }
-
-    .faq-bg__orange-triangle-cutout,
-    .faq-bg__yellow-cutout {
-        margin-top: -1px;
-    }
-
-    .faq-bg__orange-cutout,
-    .faq-bg__yellow-cutout {
-        display: block;
-        height: 50px;
-        width: 44px;
-    }
-
-    .card-body p {
-        font-family: "gilroy-medium";
-        font-size: 10px;
+    .faq__content {
+        font-size: 13px;
     }
 }
 
-/*-------media query for small devices-----*/
-@media screen and (max-width: 360px) {
+/*-------media query for smaller devices-----*/
+@media screen and (max-width: 340px) {
     .faq-top__title {
-        font-weight: normal;
-        font-size: 30px;
-        color: #00098a;
-        margin-bottom: 30px;
-        font-family: "gilroybold";
-        line-height: 30px;
+        font-size: 22px;
     }
+    .fa-angle-up {
+        font-size: 12px;
+    }
+    .faq__title {
+        font-size: 14px;
+    }
+    .faq__content {
+        font-size: 11px;
+    }
+}
 
-    /* background vector containers with bounce animation */
-    .faq-bg__left {
-        position: absolute;
-        left: 0px;
-        top: 397px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
-    }
-
-    .faq-bg__right {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-name: bounce_effect;
-        animation-name: bounce_effect;
-        -webkit-animation-duration: 3s;
-        animation-duration: 3s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-direction: normal;
-        animation-direction: normal;
-    }
-
-    /* set height of background vectors */
-    .faq-bg__blue-cutout,
-    .faq-bg__orange-triangle-cutout {
-        display: block;
-        height: 90px;
-    }
-
-    .faq-bg__orange-triangle-cutout,
-    .faq-bg__yellow-cutout {
-        margin-top: -1px;
-    }
-
-    .faq-bg__orange-cutout,
-    .faq-bg__yellow-cutout {
-        display: block;
-        height: 70px;
-        width: 60px;
-    }
-
-    .card-body p {
-        font-family: "gilroy-medium";
-        font-size: 10px;
-    }
+a:hover{
+    text-decoration: none;
 }
