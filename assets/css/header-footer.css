@@ -133,13 +133,13 @@ nav {
 
 .nav__button:hover {
   color: var(--tetiary);
-  border: 1px solid var(--tetiary);
+  /* border: 1px solid var(--tetiary);
   background-color: var(--tetiary);
   color: #fff;
   border-radius: 5px;
   padding: 0.7rem 2.5rem;
   font-family: 'gilroylight';
-  font-size: 14px;
+  font-size: 14px; */
 }
 
 .btn-nav-active {
@@ -157,6 +157,22 @@ nav {
   transform: scale(1.1);
   background-color: var(--primary);
   border-color: var(--primary);
+}
+
+.nav__button__link {
+  color: #000000;
+}
+
+.nav__button__link:hover {
+  color: var(--tetiary);
+}
+
+.nav__button__link__active {
+  color: #fff;
+}
+
+.nav__button__link__active:hover {
+  color: #fff;
 }
 
 .hamburger-container {
@@ -243,6 +259,24 @@ footer {
 
 .footer__menu__list__link:hover {
   text-decoration: none;
+  color: var(--tetiary);
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link {
+  margin-left: 6%;
+}
+
+.social-button__icon {
+  color: rgb(214, 205, 205);
+  font-size: 1.5rem;
+}
+
+.social-button__icon:hover {
   color: var(--tetiary);
 }
 
@@ -347,6 +381,18 @@ footer {
     border-radius: 5px;
     padding: 0.6rem 2rem;
   }
+
+  .mobile__nav__button__link {
+    color: #fff;
+  }
+
+  .mobile__nav__button__link:hover {
+    color: #fff;
+  }
+
+  .mobile__nav__button__link:focus {
+    outline: none;
+  }
   
 }
 
@@ -395,6 +441,19 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 2%;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-link {
+    margin: 3%;
+  }
+  
+  .social-button__icon {
+    font-size: 1.2rem;
   }
 }
 
