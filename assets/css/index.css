@@ -1,0 +1,85 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Linking Fonts */
+
+@font-face {
+  font-family: 'gilroybold';
+  src: url('../fonts/gilroy-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroy-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroysemibold';
+  src: url('../fonts/gilroy-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "gilroybold";
+}
+
+/* VARIABLES */
+
+:root {
+  --primary: #00098A;
+  --primary-dark: #1F1558;
+  --primary-light: #333CC1;
+  --secondary:#FFD43C;;
+  --tetiary: #FF8C5F;
+  --default-font: 'roboto'
+  font-family: var(--default-font)
+}
+
+/* HERO SECTION STYLING */
+
+.top-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.top-welcome-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 5px 30px;
+}
+
+.welcome-btn-link {
+  color: #fff;
+}
+
+.welcome-btn-link:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 991px) {
+  .welcome-area {
+    height: auto;
+  }
+
+  .welcome-content p {
+    text-align: center;
+    color: var(--primary);
+    margin: 0 10%;
+  }
+
+  .welcome-content h3 {
+    text-align: center;
+  }
+}
+
+
+
