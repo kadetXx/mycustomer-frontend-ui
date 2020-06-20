@@ -27,10 +27,14 @@
       </div>
     </div>
     <!-- background vectors -->
-    <img src="assets/img/faq-bg/blue-cutout.png" alt="blue-cutout" class="faq-top__blue-cutout">
-    <img src="assets/img/faq-bg/orange-cutout.png" alt="orange-cutout" class="faq-top__orange-cutout">
-    <img src="assets/img/faq-bg/yellow-cutout.png" alt="yellow-cutout" class="faq-top__yellow-cutout">
-    <img src="assets/img/faq-bg/orange-triangle-cutout.png" alt="orange-triangle-cutout" class="faq-top__orange-triangle-cutout">
+    <div class="faq-bg__left">
+      <img src="assets/img/faq-bg/orange-cutout.png" alt="orange-cutout" class="faq-bg__orange-cutout">
+      <img src="assets/img/faq-bg/yellow-cutout.png" alt="yellow-cutout" class="faq-bg__yellow-cutout">
+    </div>
+    <div class="faq-bg__right">
+      <img src="assets/img/faq-bg/blue-cutout.png" alt="blue-cutout" class="faq-bg__blue-cutout">
+      <img src="assets/img/faq-bg/orange-triangle-cutout.png" alt="orange-triangle-cutout" class="faq-bg__orange-triangle-cutout">
+    </div>
   </section>
   <!-- questions in accordion -->
   <section class="faq">
@@ -39,7 +43,7 @@
         <!-- Question one -->
         <div class="card">
           <div class="card-header" id="headingOne">
-            <button class="faq__btn" type="button" data-toggle="collapse" data-target="#questionOne" aria-expanded="false" aria-controls="questionOne">
+            <button class="faq__btn collapsed" type="button" data-toggle="collapse" data-target="#questionOne" aria-expanded="false" aria-controls="questionOne">
               <h2 class="faq__title mb-0">What is myCustomer?</h2>
               <i class="fas fa-angle-up"></i>
             </button>
@@ -54,9 +58,9 @@
         <!-- Question two -->
         <div class="card">
           <div class="card-header" id="headingTwo">
-            <button class="faq__btn" type="button" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+            <button class="faq__btn collapsed" type="button" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
               <h2 class="faq__title mb-0">Why should I use myCustomer?</h2>
-              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
             </button>
           </div>
           <!-- Question two body -->
@@ -69,9 +73,9 @@
         <!-- Question three -->
         <div class="card">
           <div class="card-header" id="headingThree">
-            <button class="faq__btn" type="button" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
+            <button class="faq__btn collapsed" type="button" data-toggle="collapse" data-target="#questionThree" aria-expanded="false" aria-controls="questionThree">
               <h2 class="faq__title mb-0">How can I download the app?</h2>
-              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
             </button>
           </div>
           <!-- Question three body-->
@@ -84,9 +88,9 @@
         <!-- Question four -->
         <div class="card">
           <div class="card-header" id="headingFour">
-            <button class="faq__btn" type="button" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+            <button class="faq__btn collapsed" type="button" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
               <h2 class="faq__title mb-0">Will I need data to make use of the app?</h2>
-              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
             </button>
           </div>
           <!-- Question four body -->
