@@ -4,7 +4,6 @@
 @import "magnific-popup.css";
 @import "font-awesome.min.css";
 @import "themify-icons.css";
-@import "nice-select.css";
 @import "flaticon.css";
 @import "slicknav.css";
 @import "slick.css";
@@ -90,7 +89,6 @@ p{
     position: absolute;
     right: 0rem;
     top: 4rem;
-    overflow-x: hidden;
     z-index: 1;
 }
 
