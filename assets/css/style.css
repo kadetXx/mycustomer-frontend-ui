@@ -12,10 +12,56 @@
 @import "slicknav.css";
 @import "slick.css";
 
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Linking Fonts */
+
+@font-face {
+  font-family: 'gilroybold';
+  src: url('../fonts/gilroy-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroy-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroysemibold';
+  src: url('../fonts/gilroy-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "gilroybold";
+}
+
+/* VARIABLES */
+
+:root {
+  --primary: #00098A;
+  --primary-dark: #1F1558;
+  --primary-light: #333CC1;
+  --secondary:#FFD43C;;
+  --tetiary: #FF8C5F;
+  --default-font: 'roboto'
+  font-family: var(--default-font)
+}
+
+
 /* :: Reboot CSS */
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .img {
@@ -612,6 +658,7 @@ img {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: var(--secondary);
 }
 
 .shape-bottom {
@@ -1520,7 +1567,7 @@ img {
     transform: scale(1.9);
   }
 }
-
+/* 
 header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   background-color: #333CC1 !important;
@@ -1569,4 +1616,4 @@ footer .row {
 
 .menubar {
   background-color: #fff !important;
-}
+} */
