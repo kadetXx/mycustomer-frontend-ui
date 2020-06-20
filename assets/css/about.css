@@ -1,4 +1,4 @@
-
+/* Import Frameworks */
 @import "bootstrap.min.css";
 @import "owl.carousel.min.css";
 @import "magnific-popup.css";
@@ -76,11 +76,12 @@ p{
     flex-direction: column;
     position: absolute;
     top: 12.5rem;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about-background-left img{
     width: 80%;
+    margin-top: -1px;
 }
 
 .about-background-right{
@@ -90,12 +91,12 @@ p{
     right: 0rem;
     top: 4rem;
     overflow-x: hidden;
-    z-index: -1;
+    z-index: 1;
 }
 
 .about-background-right img{
     width: 100%;
-
+    margin-top: -1px;
 }
 
 
@@ -187,8 +188,9 @@ p{
 #about-collage{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 15px;
-    padding: 7%;
+    grid-gap: 10px 15px;
+    align-self: center;
+    margin-bottom: 1.5rem;
 }
 
 .about-collage-images img{
@@ -200,18 +202,29 @@ p{
 
 /* Collage Images Position & Styling */
 #collage_1{
-    padding: 2.5rem 0 0 2.5rem;
     object-fit: cover;
+    margin: .5rem 0;
+    margin-left: 1rem;
+    padding: 1.5rem 1rem  0 .5rem;
 }
 
-#collage_5{
-    margin: 2.5rem 0;
+#collage_3{
+    margin-top: 2rem;
+}
+
+#collage_4{
+    margin-top: 0rem;
+}
+
+#collage_3{
     object-fit: cover;
+    margin-top: 5rem ;
 }
 
 #collage_6{
-    padding: 0 2.5rem 2.5rem 0;
     object-fit: cover;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
 }
 
 
@@ -221,6 +234,7 @@ p{
 #footer-background img{
     width: 100%;
     height: auto;
+    margin-bottom: -1px;
 }
 
 /* Media Queries for 767px and below */
@@ -273,7 +287,7 @@ p{
 
    .about-heading h1{
        font-size: 32px;
-       text-align: left;
+       text-align: center;
        width: 100%;
        margin: 1rem 0;
        padding: 1rem;
@@ -283,7 +297,7 @@ p{
    .about-heading p{
        font-size: 16px;
        width: 90%;
-       text-align: left;
+       text-align: center;
        margin-left: 1rem;
    }
 
@@ -303,20 +317,9 @@ p{
        width: 90%;
    }
 
-   #collage_1{
-    padding: .5rem 0 0 .5rem;
-    object-fit: cover;
-}
-
-#collage_5{
-    margin: .5rem 0;
-    object-fit: cover;
-}
-
-#collage_6{
-    padding: 1.75rem .5rem 0rem 0;
-    object-fit: cover;
-}
+    #collage_3{
+        margin-top: 3.5rem;
+    }
 }
 
 /* Media Query for 768px and above */
@@ -381,6 +384,14 @@ p{
     }
 
 }
+
+@media(min-width:1300px){
+    #collage_3{
+        margin-top: 8.5rem;
+    }
+}
+
+/* Animation */
 
 .about-background-left,
 .about-background-right{
