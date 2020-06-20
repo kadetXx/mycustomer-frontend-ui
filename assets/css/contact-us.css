@@ -13,15 +13,15 @@ a{
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('../fonts/gilroy-bold.woff') format('woff');
+    font-family: 'gilroybold';
+    src: url('../fonts/gilroybold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
+    font-family: 'gilroy-medium';
     src: url('../fonts/gilroy-medium.ttf') ;
     font-weight: normal;
     font-style: normal;
@@ -29,45 +29,16 @@ a{
 }
 
 @font-face {
-    font-family: 'Gilroy-Semibold';
+    font-family: 'gilroysemibold';
     src: url('../fonts/gilroy-semibold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 } 
 
-.btn-nav-active {
-    border: 1px solid #FF8C5F;
-    background-color: #FF8C5F;
-    color: #fff;
-    border-radius: 5px;
-    padding: 0.7rem 2rem;
-    font-family: 'gilroylight';
-    font-size: 14px;
-  }
-  
-  .btn-nav-active:hover {
-    color: #FF8C5F;
-    transform: scale(1.1);
-    background-color: #fff;
-    border-color: #FF8C5F;
-  }
-
-.nav-container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 #main{
     margin-top: 5%;
     margin-bottom: 5%;
-}
-.container {
-    display: block;
-    margin: 0 auto;
 }
 
 /* Form Styles */
@@ -76,7 +47,7 @@ form{
 }
 
 .form-head{
-    font-family: 'Gilroy-Bold';
+    font-family: 'gilroybold';
     font-style: normal;
     font-weight: bold;
     font-size: 38px;
@@ -104,7 +75,7 @@ input, .custom-select{
     position: relative;
     border: none;
     padding: 0;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 } 
 
 .custom-select select {
@@ -176,7 +147,7 @@ option{
     border: none;
     outline: none;
     color: white;
-    font-family: 'Gilroy-Bold';
+    font-family: 'gilroybold';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -207,7 +178,7 @@ textarea{
     margin-right: 10px;
 }
 ::placeholder{
-    font-family: 'Gilroy-Medium';
+    font-family: 'gilroy-medium';
     font-style: normal;
     color: #000000;
     font-weight: normal;
@@ -232,7 +203,7 @@ input:focus, ::placeholder:focus {
     margin: 0 auto;
 }
 .subhead{
-    font-family: 'Gilroy-Bold';
+    font-family: 'gilroybold';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -240,7 +211,7 @@ input:focus, ::placeholder:focus {
     color: #000000;
 }
 .subhead-text{
-    font-family: 'Gilroy-Medium';
+    font-family: 'gilroy-medium';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -256,4 +227,32 @@ input:focus, ::placeholder:focus {
 .map-area{
     max-width: 306px;
     margin-bottom: 10px;
+}
+.map-iframe{
+    max-width: 306px;
+}
+
+/* Responsivenesss */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .map-iframe{
+        max-width: 270px;
+    }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+    .map-iframe{
+        max-width: 270px;
+    }    
+    .contact-extra{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 320px){
+    .map-iframe{
+        max-width: 230px;
+    }
+    
+    .contact-extra{
+        margin-top: 10%;
+    }
 }
