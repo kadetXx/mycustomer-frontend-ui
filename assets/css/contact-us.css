@@ -1,0 +1,175 @@
+/* General Style */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/gilroy-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('../fonts/gilroy-medium.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+.nav-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#main{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form{
+    padding: 10px;
+}
+.form-head{
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 167.8%;
+    color: #000000;
+}
+input, select {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    max-width: 370px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DFDFDF;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    color: #000000;
+    margin-bottom: 30px;
+}
+select{
+    padding-left: 0px;
+}
+option{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191919;
+}
+.button{
+    margin-top: 10px;
+    max-width: 125px;
+    background: #21D184;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px;
+    letter-spacing: -0.02em;
+}
+.button > a{
+    color: #ffffff;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    max-width: 431px;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    border-radius: 0px;
+    overflow: auto;
+    resize: none;
+    background: #F3F3F3;
+    height: 237px;
+    box-sizing: border-box;
+}
+.send{
+    margin-right: 10px;
+}
+::placeholder{
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+/* Additional Styles */
+.contact-extra{
+    box-shadow: 0px 34px 80px rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    max-width: 366px;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.subhead{
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.subhead-text{
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+#st-1{
+    margin-bottom: 35px;
+}
+.subhead-text > a{
+    color: #000000;
+}
+.map-area{
+    max-width: 306px;
+    margin-bottom: 10px;
+}
