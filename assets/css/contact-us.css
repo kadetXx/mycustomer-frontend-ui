@@ -36,6 +36,23 @@ a{
 
 } 
 
+.btn-nav-active {
+    border: 1px solid #FF8C5F;
+    background-color: #FF8C5F;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    font-family: 'gilroylight';
+    font-size: 14px;
+  }
+  
+  .btn-nav-active:hover {
+    color: #FF8C5F;
+    transform: scale(1.1);
+    background-color: #fff;
+    border-color: #FF8C5F;
+  }
+
 .nav-container {
   width: 100%;
   padding-right: 15px;
@@ -45,8 +62,8 @@ a{
 }
 
 #main{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .container {
     display: block;
@@ -57,6 +74,7 @@ a{
 form{
     padding: 10px;
 }
+
 .form-head{
     font-family: 'Gilroy-Bold';
     font-style: normal;
@@ -65,7 +83,8 @@ form{
     line-height: 167.8%;
     color: #000000;
 }
-input, select {
+
+input, .custom-select{
     width: 100%;
     padding: 12px 5px;
     margin: 8px 0;
@@ -77,24 +96,82 @@ input, select {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-sizing: border-box;
-    color: #000000;
+    color: #000;
     margin-bottom: 30px;
 }
-select{
-    padding-left: 0px;
+
+.custom-select {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin-bottom: 2%;
+} 
+
+.custom-select select {
+    display: none;
 }
+
+.select-selected {
+    background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+  
+  /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #000;
+    padding: 8px 16px 8px 5px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+  
+  /* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 option{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 50px;
+    padding: 5%;
     color: #191919;
 }
 .button{
     margin-top: 10px;
     max-width: 125px;
-    background: #21D184;
+    background: #FF8C5F;
     border-radius: 5px;
     border: none;
     outline: none;
@@ -119,7 +196,7 @@ textarea{
     display: inline-block;
     border: 0;
     outline: none;
-    border-radius: 0px;
+    border-radius: 5px;
     overflow: auto;
     resize: none;
     background: #F3F3F3;
@@ -137,6 +214,13 @@ textarea{
     font-size: 15px;
     line-height: 27px;
 }
+
+input:focus, ::placeholder:focus {
+    top: -14px;
+    font-size: 12px;
+    color: #000;
+}
+  
 
 /* Additional Styles */
 .contact-extra{
