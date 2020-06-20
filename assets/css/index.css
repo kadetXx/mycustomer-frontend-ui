@@ -81,5 +81,60 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+/* WHAT WE OFFER SECTION STYLING */
+
+.feature-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 27% 7%;
+  text-align: center;
+}
+
+.feature__heading {
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.feature__text h3{
+  font-size: 24px;
+  line-height: 124.8%;
+  padding: 10% 30%;
+  text-align: center;
+}
+
+.feature__text p {
+  text-align: center;
+  padding: 0 6% 3%;
+}
+
+.feature__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height:200px;
+  overflow:hidden;
+  padding-top: 250px;
+}
+
+.feature__img__screen {
+  border: 2px solid #000;
+  border-radius: 25px;
+  box-shadow: #c4c4c4 3px 3px 10px 5px;
+}
+
+.feature__img__screen-blk {
+  border: none;
+  border-radius: 32px;
+}
 
 
+/*  WHO WE ARE AREA */
+
+.why-we-are-area {
+  background-color:#F3F3F3;;
+}
