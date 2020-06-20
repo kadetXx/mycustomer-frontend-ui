@@ -7,8 +7,8 @@
   <meta name="Description" content="Get in touch with us." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/contact-us.css">
   <link rel="stylesheet" href="assets/css/header-footer.css">
+  <link rel="stylesheet" href="assets/css/contact-us.css">
   <title>Contact Us</title>
 </head>
 <body>
@@ -75,13 +75,15 @@
                     <p class="form-head">Let’s Keep in Touch</p>
                     <input type="text" placeholder="Full Name" name="Full Name" class="name-input" >
                     <input type="email" name="Email" id="Email" placeholder="Email">
-                    <select name="" id="">
-                        <option value="Subject" selected>Subject</option>
-                        <option value="General Enquiries">General Enquiries</option>
-                        <option value="Suggestion">Suggestion</option>
-                        <option value="Fix Bugs">Fix Bugs</option>
-                        <option value="Others">Others</option>
-                    </select>
+                    <div class="custom-select" >
+                        <select>
+                            <option value="Subject" selected>Subject</option>
+                            <option value="General Enquiries">General Enquiries</option>
+                            <option value="Suggestion">Suggestion</option>
+                            <option value="Fix Bugs">Fix Bugs</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
                     <textarea name="Message" id="Message" placeholder="Your Message Here"></textarea>
                    <div class="button"><a href=""><img src="assets/img/icon-img/send.svg" alt="icon" class="send">Send</a></div>
                 </form>
@@ -136,5 +138,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="assets/js/header-footer.js"></script>
+  <script src="assets/js/contact-us.js"></script>
 </body>
 </html>
