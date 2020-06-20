@@ -199,6 +199,10 @@ p{
     object-fit: contain;
 }
 
+.about-collage-images img:hover{
+        transition: all 0.8s ease 0s;
+         transform: scale(1.03, 1.03);
+}
 
 /* Collage Images Position & Styling */
 #collage_1{
