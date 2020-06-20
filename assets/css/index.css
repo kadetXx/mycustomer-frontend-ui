@@ -81,6 +81,12 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+@media (max-width: 570px) {
+  .top-button-container {
+    transform: scale(0.7);
+  }
+}
+
 /* WHAT WE OFFER SECTION STYLING */
 
 .feature-heading-container {
@@ -259,5 +265,13 @@ h1,h2,h3,h4,h5,h6 {
 
   .call-to-download-floating-triangles {
     left: -55px;
+  }
+
+  .why-we-content-text {
+    text-align: center;
+  }
+
+  .why-we-content-text p {
+    padding-right: 0;
   }
 }
