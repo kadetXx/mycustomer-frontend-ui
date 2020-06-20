@@ -183,9 +183,11 @@ h1,h2,h3,h4,h5,h6 {
   background-color: var(--tetiary);
 }
 
-/* #about > div > div > div.col-md-5 > div > div.video-thumb > img {
-  max-width: 50%;
-} */
+@media (max-width: 767px) {
+  #about > div > div > div.col-md-5 > div > div.video-thumb > img {
+    max-width: 50%;
+  }
+}
 
 /* CALL TO ACTION STYLING */ 
 
