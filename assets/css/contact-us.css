@@ -65,10 +65,6 @@ a{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.container {
-    display: block;
-    margin: 0 auto;
-}
 
 /* Form Styles */
 form{
@@ -104,7 +100,7 @@ input, .custom-select{
     position: relative;
     border: none;
     padding: 0;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 } 
 
 .custom-select select {
@@ -256,4 +252,32 @@ input:focus, ::placeholder:focus {
 .map-area{
     max-width: 306px;
     margin-bottom: 10px;
+}
+.map-iframe{
+    max-width: 306px;
+}
+
+/* Resonsivenesss */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .map-iframe{
+        max-width: 270px;
+    }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+    .map-iframe{
+        max-width: 270px;
+    }    
+    .contact-extra{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 320px){
+    .map-iframe{
+        max-width: 230px;
+    }
+    
+    .contact-extra{
+        margin-top: 10%;
+    }
 }
