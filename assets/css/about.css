@@ -1,0 +1,400 @@
+
+/* Importing Fonts */
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('../fonts/gilroy-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../fonts/gilroy-medium.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+/* Basic Styling */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "gilroybold";
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+}
+
+
+.about-background-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12.5rem;
+    z-index: 1;
+}
+
+.about-background-left img{
+    width: 80%;
+    margin-top: -1px;
+}
+
+.about-background-right{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+    z-index: 1;
+}
+
+.about-background-right img{
+    width: 100%;
+    margin-top: -1px;
+}
+
+
+
+/* About Heading Styling */
+
+
+#about-header{
+    text-align: center;
+}
+
+.about-content{
+    display: grid;
+
+    width: 100%;
+}
+
+.about-heading{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 2rem ;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.about-heading h1{
+    padding: 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.about-heading-caption{
+    font-size: 1rem;
+}
+
+/* About-Main-Profile  */
+#about-profile{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.about-profile-image,
+.about-profile-content{
+    width: 49.5%;
+    height: 70%;
+}
+
+.about-profile-image{
+    text-align: center;
+}
+
+.about-profile-content{
+    padding: 2.5rem 0;
+}
+
+.about-profile-image img{
+    width: 55%;
+    filter: brightness(70%);
+    border-radius: 6px;
+}
+
+.about-profile-content p{
+    line-height: 2rem;
+    align-items: center;
+    width: 80%;
+}
+
+.about-profile-content-heading{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+
+/* About Mission Styling */
+#about-mission{
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-mission-heading{
+    font-size: 2.25rem;
+}
+
+
+/* About Collage */
+
+#about-collage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 15px;
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-collage-images img{
+    width: 100%;
+    margin-bottom: .75rem;
+    object-fit: contain;
+}
+
+.about-collage-images img:hover{
+        transition: all 0.8s ease 0s;
+         transform: scale(1.03, 1.03);
+}
+
+/* Collage Images Position & Styling */
+#collage_1{
+    object-fit: cover;
+    margin: .5rem 0;
+    margin-left: 1rem;
+    padding: 1.5rem 1rem  0 .5rem;
+}
+
+#collage_3{
+    margin-top: 2rem;
+}
+
+#collage_4{
+    margin-top: 0rem;
+}
+
+#collage_3{
+    object-fit: cover;
+    margin-top: 5rem ;
+}
+
+#collage_6{
+    object-fit: cover;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+/* Footer Styling Begins */
+
+#footer-background img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px;
+}
+
+/* Media Queries for 767px and below */
+
+@media only screen and (max-width:767px){
+  
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    #about-profile{
+       flex-direction: column;
+       
+   }
+   #about-profile div{
+       width: 100%;
+   }
+   
+   #about-mission{
+       padding: 1rem;
+       text-align: left;
+   }
+
+   .about-background-left img{
+       width: 35%;
+   }
+
+   .about-background-right img{
+       width: 55%;
+       margin-left: auto;
+   }
+
+   .about-mission-heading{
+       margin-bottom: 2rem;
+   }
+
+   .about-heading{
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+   }
+
+   .about-heading h1{
+       font-size: 32px;
+       text-align: center;
+       width: 100%;
+       margin: 1rem 0;
+       padding: 1rem;
+       margin-bottom: 1rem;
+   }
+
+   .about-heading p{
+       font-size: 16px;
+       width: 90%;
+       text-align: center;
+       margin-left: 1rem;
+   }
+
+   .about-profile-content{
+       padding: 1rem;
+   }
+
+   .about-profile-content p{
+    width: 100%;
+   }
+
+   .about-profile-content-heading{
+       font-size: 1.75rem;
+   }
+
+   .about-profile-image img{
+       width: 60%;
+   }
+
+    #collage_3{
+        margin-top: 3rem;
+    }
+}
+
+/* Media Query for 768px and above */
+
+@media only screen and (min-width:768px){
+    h2{
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    h2{
+        font-size: 3.5rem;
+    }
+    
+    #about-mission{
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px){
+
+    h2{
+        font-size: 2.05rem;
+    }
+
+    #about-header{
+        padding: 2rem;
+    }
+
+    .about-heading{
+        padding: 2rem;
+    }
+
+    .about-heading h1{
+        padding: .75rem;
+        font-size: 2.5rem;
+    }
+
+    .about-heading p{
+        font-size: .9rem;
+        margin-top: .9rem;
+    }
+
+    #about-profile{
+        padding-left: 3rem;
+    }
+
+    .about-profile-content{
+        flex: 60%;
+        padding: 1rem 2rem;
+    }
+
+    .about-profile-content p{
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    .about-profile-image img{
+        width: 100%;
+    }
+
+}
+
+@media(min-width:1300px){
+    #collage_3{
+        margin-top: 8.5rem;
+    }
+}
+
+/* Animation */
+
+.about-background-left,
+.about-background-right{
+        -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+}
+    @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }

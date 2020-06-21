@@ -1,0 +1,321 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Linking Fonts */
+
+@font-face {
+  font-family: 'gilroybold';
+  src: url('../fonts/gilroy-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroy-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroysemibold';
+  src: url('../fonts/gilroy-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "gilroybold";
+}
+
+/* VARIABLES */
+
+:root {
+  --primary: #00098A;
+  --primary-dark: #1F1558;
+  --primary-light: #333CC1;
+  --secondary:#FFD43C;;
+  --tetiary: #FF8C5F;
+  --default-font: 'roboto'
+  font-family: var(--default-font)
+}
+
+/* HERO SECTION STYLING */
+
+.top-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.top-welcome-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin: 0 5px;
+  padding: 5px 30px;
+}
+
+.welcome-btn-link {
+  color: #fff;
+}
+
+.welcome-btn-link:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 991px) {
+  .welcome-area {
+    height: auto;
+  }
+
+  .welcome-content p {
+    text-align: center;
+    color: var(--primary);
+    margin: 0 10%;
+  }
+
+  .welcome-content h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .top-button-container {
+    transform: scale(0.7);
+  }
+}
+
+/* WHAT WE OFFER SECTION STYLING */
+
+.feature-heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 27% 7%;
+  text-align: center;
+}
+
+.feature__heading {
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.feature__text h3{
+  font-size: 24px;
+  line-height: 124.8%;
+  padding: 10% 30%;
+  text-align: center;
+}
+
+.feature__text p {
+  text-align: center;
+  padding: 0 6% 3%;
+}
+
+.feature__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height:200px;
+  overflow:hidden;
+  padding-top: 250px;
+}
+
+.feature__img__screen {
+  border: 2px solid #000;
+  border-radius: 25px;
+  box-shadow: #c4c4c4 3px 3px 10px 5px;
+}
+
+.feature__img__screen-blk {
+  border: none;
+  border-radius: 32px;
+}
+
+@media (max-width: 991px) {
+  .feature__heading {
+    font-size: 1.8rem;
+  }
+
+  .feature-heading-container {
+    padding: 10% 10% 7%;
+  }
+
+  .feature__text h3 {
+    font-size: 22px;
+    line-height: 124.8%;
+    padding: 10% 20%  2%;
+    text-align: center;
+  }
+
+}
+
+
+/* FEATURE AREA*/
+
+.feature-area {
+  background-color:#F3F3F3;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.why-we-are-area {
+  background-color: var(--primary-light);
+  padding-bottom: 100px;
+}
+
+.why-we-content-text {
+  color: #fff;
+}
+
+.why-we-content-text p {
+  color: #e4e0e0;
+  padding-right: 15%;
+}
+
+.why-we-content-text .feature__action__btn {
+  background-color: var(--tetiary);
+}
+
+@media (max-width: 767px) {
+  #about > div > div > div.col-md-5 > div > div.video-thumb > img {
+    max-width: 60%;
+  }
+}
+
+/* CALL TO ACTION STYLING */ 
+
+.cta-container {
+  position: relative;
+}
+
+.call-to-download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 0;
+}
+
+.call-to-download__heading {
+  color: var(--primary);
+}
+
+.call-to-download__heading h2 {
+  text-align: center;
+}
+
+.call-to-download__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.call-to-download__button {
+  padding: 2%;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.call-to-download__button i {
+  color: var(--primary);
+  font-size: 20px;
+  width: 30%;
+}
+
+.call-to-download__button a {
+  justify-self: flex-start;
+  text-align: left;
+  color: var(--primary);
+  margin-left: 10px;
+  width: 70%;
+}
+
+.call-to-download-floating-circle {
+  position: absolute;
+  right: 10px;
+}
+
+.call-to-download-floating-triangles {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -120px;
+}
+
+/* .app-screen-shot-area {
+  background-color: var(--secondary);
+} */
+
+.app-screen-shot-area .slick-arrow {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .call-to-download__button {
+    padding: 0 2px;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    margin: 0.3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+  }
+
+  .call-to-download__button a {
+    margin-left: 0;
+  }
+
+  .call-to-download-floating-circle, .call-to-download-floating-triangles {
+    transform: scale(0.6);
+  }
+
+  .call-to-download-floating-triangles {
+    left: -55px;
+  }
+
+  .why-we-content-text {
+    text-align: center;
+  }
+
+  .why-we-content-text p {
+    padding-right: 0;
+  }
+}
+
+/* CAROUSEL */
+
+#client > div > div:nth-child(2) > div > div > div.owl-stage-outer > div > div.owl-item.active > div {
+  justify-content: center;
+  text-align: center;
+}
+
+.client-feedback-area .owl-nav {
+  position: static !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 5%;
+}
+
+.testimonial-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.testimonial-img {
+  width: 80px !important;
+  border-radius: 50%;
+}
+

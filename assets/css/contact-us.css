@@ -1,0 +1,262 @@
+/* General Style */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none !important;
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('../fonts/gilroybold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url('../fonts/gilroy-medium.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gilroysemibold';
+    src: url('../fonts/gilroy-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+#main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Form Styles */
+form{
+    padding: 10px;
+}
+
+.form-head{
+    font-family: 'gilroybold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 167.8%;
+    color: #000000;
+}
+
+input, .custom-select{
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    max-width: 370px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DFDFDF;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.custom-select {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin-bottom: 5%;
+} 
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+  
+  /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #000;
+    padding: 8px 16px 8px 5px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+  
+  /* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+option{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 5%;
+    color: #191919;
+}
+.button{
+    margin-top: 10px;
+    max-width: 125px;
+    background: #FF8C5F;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'gilroybold';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px;
+    letter-spacing: -0.02em;
+}
+.button > a{
+    color: #ffffff;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    max-width: 431px;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    overflow: auto;
+    resize: none;
+    background: #F3F3F3;
+    height: 237px;
+    box-sizing: border-box;
+}
+.send{
+    margin-right: 10px;
+}
+::placeholder{
+    font-family: 'gilroy-medium';
+    font-style: normal;
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+}
+
+input:focus, ::placeholder:focus {
+    top: -14px;
+    font-size: 12px;
+    color: #000;
+}
+  
+
+/* Additional Styles */
+.contact-extra{
+    box-shadow: 0px 34px 80px rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    max-width: 366px;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.subhead{
+    font-family: 'gilroybold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+.subhead-text{
+    font-family: 'gilroy-medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FF8C5F;
+}
+#st-1{
+    margin-bottom: 35px;
+}
+.subhead-text > a{
+    color: #FF8C5F;
+}
+
+.subhead-address {
+  color: rgb(68, 66, 66);
+}
+.map-area{
+    max-width: 306px;
+    margin-bottom: 10px;
+}
+.map-iframe{
+    max-width: 306px;
+}
+
+/* Responsivenesss */
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .map-iframe{
+        max-width: 270px;
+    }
+}
+@media (min-width: 375px) and (max-width: 480px) {
+    .map-iframe{
+        max-width: 270px;
+    }    
+    .contact-extra{
+        margin-top: 10%;
+    }
+}
+@media (max-width: 320px){
+    .map-iframe{
+        max-width: 230px;
+    }
+    
+    .contact-extra{
+        margin-top: 10%;
+    }
+}
