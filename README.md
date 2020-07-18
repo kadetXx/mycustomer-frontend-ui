@@ -19,7 +19,4 @@ I used a task 'create transaction page as an example here'
 - Go to your forked repo and create a pull request
 - Wait for your pull request to be accepted
 - After your PR have been accepted, you will want to update your local files with the latest changes which includes changes from other people's PRs as well before anything else. run: ```git pull upstream develop```
-- Thats all, you can rest now.
 
-
-Note: if any new task is assigned to you even if it is changing a test, refer back to step 5 and find your way down from there. Thanks. 
